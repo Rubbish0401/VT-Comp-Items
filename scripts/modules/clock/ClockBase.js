@@ -91,6 +91,17 @@ export class ClockBase{
 			minutes.innerText = fillChars(now.getMinutes(), fill * 2);
 			seconds.innerText = fillChars(now.getSeconds(), fill * 2);
 			milliseconds.innerText = fillChars(now.getMilliseconds(), fill * 3);
+
+			//
+			year.innerText = "2112";
+			month.innerText = "09";
+			date.innerText = "03";
+			day.innerText = "Sat";
+
+			hours.innerText = "01";
+			minutes.innerText = "23";
+			seconds.innerText = "45";
+			milliseconds.innerText = "678";
 		};
 
 		this.resume();

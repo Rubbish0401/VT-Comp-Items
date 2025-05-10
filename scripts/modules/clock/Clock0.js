@@ -3,8 +3,8 @@ import { ClockBase } from "./ClockBase.js";
 //
 
 const STYLES = [
-	"/styles/clock/clock0-structure.css",
-	"/styles/clock/clock0-face.css",
+	"/styles/clock/clock0/clock0-structure.css",
+	"/styles/clock/clock0/clock0-face.css",
 ];
 
 //

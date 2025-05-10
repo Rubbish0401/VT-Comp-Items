@@ -1,0 +1,16 @@
+:root{
+	--primary-colour: white;
+	--secondary-colour: #5F6368;
+}
+
+.clock1{
+	font-family: "Open Sans";
+	font-size: 64px;
+	font-weight: 200;
+	color: var(--secondary-colour);
+}
+
+.clock1.back{
+	background: var(--primary-colour);
+	border-radius: 12px;
+}

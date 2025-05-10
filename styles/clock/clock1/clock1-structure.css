@@ -1,0 +1,21 @@
+.clock1.back{
+	width: 400px;
+	height: fit-content;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+
+	user-select: none;
+}
+
+.clock1.separator{
+	transform: translateY(-7px);
+}
+
+.clock1.seconds{
+	margin-left: 4px;
+	padding-bottom: 16px;
+}

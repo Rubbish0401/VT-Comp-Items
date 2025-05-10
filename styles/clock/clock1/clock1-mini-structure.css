@@ -1,0 +1,16 @@
+.clock1.back{
+	width: 200px;
+	height: fit-content;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+	user-select: none;
+}
+
+.clock1.separator{
+	transform: translateY(-5px);
+}
