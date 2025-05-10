@@ -1,4 +1,4 @@
-import { Clock0 } from "/scripts/modules/clock/Clock0.mjs";
+import { Clock0 } from "/scripts/modules/clock/Clock0.js";
 
 //
 

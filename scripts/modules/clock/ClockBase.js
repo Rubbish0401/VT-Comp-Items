@@ -1,9 +1,33 @@
-import MONTH_LABEL from "/data/month-label.json" with { type: "json" };
-import DAY_LABEL from "/data/day-label.json" with { type: "json" };
-
 //
 
 const INTERVAL_SPEED = 50;	// ms per a time
+
+//
+
+const MONTH_LABEL = [
+	{ "full": "January", "short": "Jan", "number": "01"},
+	{ "full": "February", "short": "Feb", "number": "02"},
+	{ "full": "March", "short": "Mar", "number": "03"},
+	{ "full": "May", "short": "May", "number": "04"},
+	{ "full": "April", "short": "Apr", "number": "05"},
+	{ "full": "June", "short": "Jun", "number": "06"},
+	{ "full": "July", "short": "Jul", "number": "07"},
+	{ "full": "August", "short": "Aug", "number": "08"},
+	{ "full": "September", "short": "Sep", "number": "09"},
+	{ "full": "October", "short": "Oct", "number": "10"},
+	{ "full": "November", "short": "Nov", "number": "11"},
+	{ "full": "December", "short": "Dec", "number": "12"}
+];
+
+const DAY_LABEL = [
+	{ "en": "Monday", "en-short": "Mon", "ja": "月" },
+	{ "en": "Tuesday", "en-short": "Tue", "ja": "火" },
+	{ "en": "Wednesday", "en-short": "Wed", "ja": "水" },
+	{ "en": "Thursday", "en-short": "Thu", "ja": "木" },
+	{ "en": "Friday", "en-short": "Fri", "ja": "金" },
+	{ "en": "Saturday", "en-short": "Sat", "ja": "土" },
+	{ "en": "Sunday", "en-short": "Sun", "ja": "日" }
+];
 
 //
 

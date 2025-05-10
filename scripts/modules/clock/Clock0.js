@@ -1,4 +1,4 @@
-import { ClockBase } from "./ClockBase.mjs";
+import { ClockBase } from "./ClockBase.js";
 
 //
 
