@@ -1,0 +1,43 @@
+:root{
+	--theme-hue: 270;
+	--primary-colour: hsl(var(--theme-hue), 20%, 60%);
+	--secondary-colour: hsl(var(--theme-hue), 90%, 97%);
+}
+
+/* Top */
+.clock0{
+	font-family: "Open Sans";
+	color: var(--primary-colour);
+}
+
+.clock0.back{
+	background: transparent;
+	border: var(--primary-colour) 4px solid;
+	border-radius: 16px;
+}
+
+
+.clock0.body{
+	border-radius: 4px;
+	background: var(--secondary-colour);
+}
+
+.clock0.pane{
+}
+
+.clock0.separator{
+	background: var(--primary-colour);
+}
+
+/* Date */
+.clock0.date-pane{
+	font-size: 32px;
+	font-weight: 200;
+}
+
+
+/* Time */
+.clock0.time-pane{
+	font-size: 96px;
+	font-weight: 200;
+}

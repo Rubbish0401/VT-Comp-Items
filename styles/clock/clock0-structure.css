@@ -1,0 +1,65 @@
+/* Top */
+.clock0{
+	user-select: none;
+}
+
+.clock0.back{
+	width: 450px;
+	height: fit-content;
+
+	display: block;
+	padding: 8px;
+}
+
+
+.clock0.body{
+	width: 100%;
+	height: fit-content;
+
+	display: block;
+	padding: 8px;
+}
+
+.clock0.pane{
+	width: 100%;
+	height: fit-content;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.clock0.section{
+	width: fit-content;
+	height: fit-content;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.clock0.separator{
+	width: 100%;
+	height: 2px;
+
+	padding: 0px 4px;
+}
+
+/* Date */
+.clock0.date-pane{
+}
+
+.clock0.date-section{
+	margin-left: auto;
+}
+
+
+/* Time */
+.clock0.time-pane{
+	justify-content: center;
+	align-items: center;
+}
+
+.clock0.time-division{
+	transform: translateY(-7px);
+}

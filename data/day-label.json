@@ -1,0 +1,37 @@
+[
+	{
+		"en": "Monday",
+		"en-short": "Mon",
+		"ja": "月"
+	},
+	{
+		"en": "Tuesday",
+		"en-short": "Tue",
+		"ja": "火"
+	},
+	{
+		"en": "Wednesday",
+		"en-short": "Wed",
+		"ja": "水"
+	},
+	{
+		"en": "Thursday",
+		"en-short": "Thu",
+		"ja": "木"
+	},
+	{
+		"en": "Friday",
+		"en-short": "Fri",
+		"ja": "金"
+	},
+	{
+		"en": "Saturday",
+		"en-short": "Sat",
+		"ja": "土"
+	},
+	{
+		"en": "Sunday",
+		"en-short": "Sun",
+		"ja": "日"
+	}
+]

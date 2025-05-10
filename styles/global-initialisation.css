@@ -1,0 +1,32 @@
+/* Structure */
+*{
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	touch-action: none;
+}
+
+*::-webkit-scrollbar{
+	display: none;
+}
+
+body{
+	width: fit-content;
+	height: fit-content;
+
+	position: relative;
+
+	padding: 0;
+	margin: auto;
+}
+
+body *{
+	touch-action: auto;
+}
+
+/* Face */
+html{
+	font-family: "Noto Sans JP", "Open Sans";
+	color: #5F6368;
+}
