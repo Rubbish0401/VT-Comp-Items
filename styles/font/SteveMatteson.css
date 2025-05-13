@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Arimo";
+	src:
+		url("/src/font/SteveMatteson/Arimo-VariableFont_wght.ttf"),
+		url("/src/font/SteveMatteson/Arimo-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Cousine";
+	src:
+		url("/src/font/SteveMatteson/Cousine-static/Cousine-Regular.ttf"),
+		url("/src/font/SteveMatteson/Cousine-static/Cousine-Bold.ttf"),
+		url("/src/font/SteveMatteson/Cousine-static/Cousine-Italic.ttf"),
+		url("/src/font/SteveMatteson/Cousine-static/Cousine-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src:
+		url("/src/font/SteveMatteson/OpenSans-VariableFont_wdth\,wght.ttf"),
+		url("/src/font/SteveMatteson/OpenSans-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+	font-family: "Tinos";
+	src:
+		url("/src/font/SteveMatteson/Tinos-static/Tinos-Regular.ttf"),
+		url("/src/font/SteveMatteson/Tinos-static/Tinos-Bold.ttf"),
+		url("/src/font/SteveMatteson/Tinos-static/Tinos-Italic.ttf"),
+		url("/src/font/SteveMatteson/Tinos-static/Tinos-BoldItalic.ttf");
+}

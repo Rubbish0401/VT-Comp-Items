@@ -1,0 +1,73 @@
+/*
+	https://ymnk-design.com/
+*/
+
+@font-face {
+	font-family: "ymnk ヤデワのジ";
+	src: url("/src/font/ymnk/YDWyadewanoji.otf");
+}
+
+@font-face {
+	font-family: "ymnk yadewanoji";
+	src: url("/src/font/ymnk/YDWyadewanoji.otf");
+}
+
+@font-face {
+	font-family: "ymnk yadewa-no-ji";
+	src: url("/src/font/ymnk/YDWyadewanoji.otf");
+}
+
+@font-face {
+	font-family: "ヤデワのジ";
+	src: url("/src/font/ymnk/YDWyadewanoji.otf");
+}
+
+@font-face {
+	font-family: "yadewanoji";
+	src: url("/src/font/ymnk/YDWyadewanoji.otf");
+}
+
+@font-face {
+	font-family: "yadewa-no-ji";
+	src: url("/src/font/ymnk/YDWyadewanoji.otf");
+}
+
+@font-face {
+	font-family: "ymnk バナナスリップ";
+	src: url("/src/font/ymnk/bananaslip.otf");
+}
+
+@font-face {
+	font-family: "ymnk bananaslip";
+	src: url("/src/font/ymnk/bananaslip.otf");
+}
+
+@font-face {
+	font-family: "バナナスリップ";
+	src: url("/src/font/ymnk/bananaslip.otf");
+}
+
+@font-face {
+	font-family: "bananaslip";
+	src: url("/src/font/ymnk/bananaslip.otf");
+}
+
+@font-face {
+	font-family: "ymnk バナナスリップ plus";
+	src: url("/src/font/ymnk/YDWbananaslipplus.otf");
+}
+
+@font-face {
+	font-family: "ymnk bananaslip plus";
+	src: url("/src/font/ymnk/YDWbananaslipplus.otf");
+}
+
+@font-face {
+	font-family: "バナナスリップ plus";
+	src: url("/src/font/ymnk/YDWbananaslipplus.otf");
+}
+
+@font-face {
+	font-family: "bananaslip plus";
+	src: url("/src/font/ymnk/YDWbananaslipplus.otf");
+}

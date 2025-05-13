@@ -1,0 +1,167 @@
+/*
+	https://fontopo.com/
+*/
+
+@font-face{
+	font-family: "fontopo Subway";
+	src: url("/src/font/fontopo/fontopoSUBWAY-Regular.otf");
+}
+
+@font-face{
+	font-family: "fontopo SOLID";
+	src: url("/src/font/fontopo/fontopoSOLID-Regular.otf");
+}
+
+@font-face{
+	font-family: "fontopo Sunny Day";
+	src: url("/src/font/fontopo/fontopoSunnyDay-Regular.otf");
+}
+
+@font-face{
+	font-family: "fontopo NEUTRAL";
+	src: url("/src/font/fontopo/fontopoNEUTRAL-Regular.otf");
+}
+
+@font-face{
+	font-family: "fontopo オリエンタル";
+	src: url("/src/font/fontopo/FontopoORIENTAL.otf");
+}
+
+@font-face{
+	font-family: "fontopo Oriental";
+	src: url("/src/font/fontopo/FontopoORIENTAL.otf");
+}
+
+@font-face{
+	font-family: "fontopo ニクキュウ";
+	src: url("/src/font/fontopo/FontopoNIKUKYU.otf");
+}
+
+@font-face{
+	font-family: "fontopo Nikukyu";
+	src: url("/src/font/fontopo/FontopoNIKUKYU.otf");
+}
+
+@font-face{
+	font-family: "fontopo にほんご";
+	src: url("/src/font/fontopo/FontopoNIHONGO.otf");
+}
+
+@font-face{
+	font-family: "fontopo Nihongo";
+	src: url("/src/font/fontopo/FontopoNIHONGO.otf");
+}
+
+@font-face{
+	font-family: "fontopo ぼくたちのゴシック";
+	src: url("/src/font/fontopo/bokutachi.otf");
+}
+
+@font-face{
+	font-family: "fontopo bokutachi";
+	src: url("/src/font/fontopo/bokutachi.otf");
+}
+
+@font-face{
+	font-family: "fontopo ぼくたちのゴシック2 ボールド";
+	src: url("/src/font/fontopo/Boku2-Bold.otf");
+}
+
+@font-face{
+	font-family: "fontopo bokutachi2 Bold";
+	src: url("/src/font/fontopo/Boku2-Bold.otf");
+}
+
+@font-face{
+	font-family: "boku2-bold";
+	src: url("/src/font/fontopo/Boku2-Bold.otf");
+}
+
+@font-face{
+	font-family: "fontopo ぼくたちのゴシック2 レギュラー";
+	src: url("/src/font/fontopo/Boku2-Regular.otf");
+}
+
+@font-face{
+	font-family: "fontopo bokutachi2 Regular";
+	src: url("/src/font/fontopo/Boku2-Regular.otf");
+}
+
+@font-face{
+	font-family: "boku2";
+	src: url("/src/font/fontopo/Boku2-Regular.otf");
+}
+
+@font-face{
+	font-family: "fontopo はれのそら明朝";
+	src: url("/src/font/fontopo/Harenosora.otf");
+}
+
+@font-face{
+	font-family: "fontopo Harenosora";
+	src: url("/src/font/fontopo/Harenosora.otf");
+}
+
+@font-face{
+	font-family: "fontopo こども丸ゴシック";
+	src:
+		url("/src/font/fontopo/KodomoRounded.otf"),
+		url("/src/font/fontopo/KodomoRounded-Light.otf");
+}
+
+@font-face{
+	font-family: "fontopo KodomoRounded";
+	src:
+		url("/src/font/fontopo/KodomoRounded.otf"),
+		url("/src/font/fontopo/KodomoRounded-Light.otf");
+}
+
+@font-face{
+	font-family: "fontopo こころ明朝体";
+	src: url("/src/font/fontopo/Kokoro.otf");
+}
+
+@font-face{
+	font-family: "fontopo Kokoro";
+	src: url("/src/font/fontopo/Kokoro.otf");
+}
+
+@font-face{
+	font-family: "fontopo SUMI";
+	src: url("/src/font/fontopo/fontopoSUMI.otf");
+}
+
+@font-face{
+	font-family: "fontopo 炭";
+	src: url("/src/font/fontopo/fontopoSUMI.otf");
+}
+
+@font-face{
+	font-family: "fontopo KARASU";
+	src: url("/src/font/fontopo/fontopoKARASU.otf");
+}
+
+@font-face{
+	font-family: "fontopo 鴉";
+	src: url("/src/font/fontopo/fontopoKARASU.otf");
+}
+
+@font-face{
+	font-family: "fontopo KEISEN";
+	src: url("/src/font/fontopo/fontopoKEISEN.otf");
+}
+
+@font-face{
+	font-family: "fontopo 罫線";
+	src: url("/src/font/fontopo/fontopoKEISEN.otf");
+}
+
+@font-face{
+	font-family: "fontopo BOKU";
+	src: url("/src/font/fontopo/fontopoBOKU.otf");
+}
+
+@font-face{
+	font-family: "fontopo 墨";
+	src: url("/src/font/fontopo/fontopoBOKU.otf");
+}

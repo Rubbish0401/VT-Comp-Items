@@ -1,0 +1,109 @@
+@font-face {
+	font-family: "Noto Sans JP";
+	src: url("/src/font/Google/NotoSansJP-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Noto Serif JP";
+	src: url("/src/font/Google/NotoSerifJP-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans";
+	src: 
+		url("/src/font/Google/NotoSans-VariableFont_wdth\,wght.ttf"),
+		url("/src/font/Google/NotoSans-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans Cypro Minoan";
+	src: url("/src/font/Google/NotoSansCyproMinoan-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans Display";
+	src:
+		url("/src/font/Google/NotoSansDisplay-VariableFont_wdth\,wght.ttf"),
+		url("/src/font/Google/NotoSansDisplay-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans Indic Siyaq Numbers";
+	src: url("/src/font/Google/NotoSansIndicSiyaqNumbers-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans Math";
+	src: url("/src/font/Google/NotoSansMath-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans Mayan Numerals";
+	src: url("/src/font/Google/NotoSansMayanNumerals-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans Mono";
+	src: url("/src/font/Google/NotoSansMono-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans Sign Writing";
+	src: url("/src/font/Google/NotoSansSignWriting-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans Symbols";
+	src: url("/src/font/Google/NotoSansSymbols-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Noto Sans Symbols 2";
+	src: url("/src/font/Google/NotoSansSymbols2-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Noto Serif";
+	src:
+		url("/src/font/Google/NotoSerif-VariableFont_wdth\,wght.ttf"),
+		url("/src/font/Google/NotoSerif-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+	font-family: "Noto Serif Display";
+	src:
+		url("/src/font/Google/NotoSerifDisplay-VariableFont_wdth\,wght.ttf"),
+		url("/src/font/Google/NotoSerifDisplay-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+	font-family: "Noto Serif Hentaigana";
+	src: url("/src/font/Google/NotoSerifHentaigana-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Noto Serif Khitan Small Script";
+	src: url("/src/font/Google/NotoSerifKhitanSmallScript-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Noto Serif Ottoman Siyaq";
+	src: url("/src/font/Google/NotoSerifOttomanSiyaq-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Noto Music";
+	src: url("/src/font/Google/NotoMusic-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Noto Znamenny Musical Notation";
+	src: url("/src/font/Google/NotoZnamennyMusicalNotation-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Lunasima";
+	src:
+		url("/src/font/Google/Lunasima-static/Lunasima-Regular.ttf"),
+		url("/src/font/Google/Lunasima-static/Lunasima-Bold.ttf");
+}
