@@ -1,0 +1,310 @@
+@font-face {
+	font-family: "BIZ UDGothic";
+	src:
+		url("/src/font/GoogleFontsJapanese/BIZ_UDGothic/BIZUDGothic-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/BIZ_UDGothic/BIZUDGothic-Bold.ttf");
+}
+
+@font-face {
+	font-family: "BIZ UDMincho";
+	src:
+		url("/src/font/GoogleFontsJapanese/BIZ_UDMincho/BIZUDMincho-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/BIZ_UDMincho/BIZUDMincho-Bold.ttf");
+}
+
+@font-face {
+	font-family: "BIZ UDPGothic";
+	src:
+		url("/src/font/GoogleFontsJapanese/BIZ_UDPGothic/BIZUDPGothic-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/BIZ_UDPGothic/BIZUDPGothic-Bold.ttf");
+}
+
+@font-face {
+	font-family: "BIZ UDPMincho";
+	src:
+		url("/src/font/GoogleFontsJapanese/BIZ_UDPMincho/BIZUDPMincho-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/BIZ_UDPMincho/BIZUDPMincho-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Dela Gothic One";
+	src: url("/src/font/GoogleFontsJapanese/DelaGothicOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "DotGothic16";
+	src: url("/src/font/GoogleFontsJapanese/DotGothic16-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Hachi Maru Pop";
+	src: url("/src/font/GoogleFontsJapanese/HachiMaruPop-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Hina Mincho";
+	src: url("/src/font/GoogleFontsJapanese/HinaMincho-Regular.ttf");
+}
+
+@font-face {
+	font-family: "IBM Plex Sans JP";
+	src:
+		url("/src/font/GoogleFontsJapanese/IBM_Plex_Sans_JP-static/IBMPlexSansJP-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/IBM_Plex_Sans_JP-static/IBMPlexSansJP-ExtraLight.ttf"),
+		url("/src/font/GoogleFontsJapanese/IBM_Plex_Sans_JP-static/IBMPlexSansJP-Light.ttf"),
+		url("/src/font/GoogleFontsJapanese/IBM_Plex_Sans_JP-static/IBMPlexSansJP-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/IBM_Plex_Sans_JP-static/IBMPlexSansJP-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/IBM_Plex_Sans_JP-static/IBMPlexSansJP-SemiBold.ttf"),
+		url("/src/font/GoogleFontsJapanese/IBM_Plex_Sans_JP-static/IBMPlexSansJP-Thin.ttf");
+}
+
+@font-face {
+	font-family: "Kaisei Decol";
+	src:
+		url("/src/font/GoogleFontsJapanese/Kaisei_Decol-static/KaiseiDecol-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kaisei_Decol-static/KaiseiDecol-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kaisei_Decol-static/KaiseiDecol-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Kaisei HarunoUmi";
+	src:
+		url("/src/font/GoogleFontsJapanese/Kaisei_HarunoUmi-static/KaiseiHarunoUmi-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kaisei_HarunoUmi-static/KaiseiHarunoUmi-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kaisei_HarunoUmi-static/KaiseiHarunoUmi-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Kaisei Opti";
+	src:
+		url("/src/font/GoogleFontsJapanese/Kaisei_Opti-static/KaiseiOpti-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kaisei_Opti-static/KaiseiOpti-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kaisei_Opti-static/KaiseiOpti-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Kaisei Tokumin";
+	src:
+		url("/src/font/GoogleFontsJapanese/Kaisei_Tokumin-static/KaiseiTokumin-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kaisei_Tokumin-static/KaiseiTokumin-ExtraBold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kaisei_Tokumin-static/KaiseiTokumin-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kaisei_Tokumin-static/KaiseiTokumin-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Kiwi Maru";
+	src:
+		url("/src/font/GoogleFontsJapanese/Kiwi_Maru-static/KiwiMaru-Light.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kiwi_Maru-static/KiwiMaru-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Kiwi_Maru-static/KiwiMaru-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Klee One";
+	src:
+		url("/src/font/GoogleFontsJapanese/Klee_One-static/KleeOne-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/Klee_One-static/KleeOne-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Kosugi";
+	src: url("/src/font/GoogleFontsJapanese/Kosugi-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Kosugi Maru";
+	src: url("/src/font/GoogleFontsJapanese/KosugiMaru-Regular.ttf");
+}
+
+@font-face {
+	font-family: "M PLUS 1";
+	src: url("/src/font/GoogleFontsJapanese/MPLUS1-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "M PLUS 1 Code";
+	src: url("/src/font/GoogleFontsJapanese/MPLUS1Code-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "M PLUS 1p";
+	src:
+		url("/src/font/GoogleFontsJapanese/M_PLUS_1p-static/MPLUS1p-Black.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_1p-static/MPLUS1p-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_1p-static/MPLUS1p-ExtraBold.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_1p-static/MPLUS1p-Light.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_1p-static/MPLUS1p-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_1p-static/MPLUS1p-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_1p-static/MPLUS1p-Thin.ttf");
+}
+
+@font-face {
+	font-family: "M PLUS 2";
+	src: url("/src/font/GoogleFontsJapanese/MPLUS2-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "M PLUS Rouded 1c";
+	src:
+		url("/src/font/GoogleFontsJapanese/M_PLUS_Rounded_1c-static/MPLUSRounded1c-Black.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_Rounded_1c-static/MPLUSRounded1c-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_Rounded_1c-static/MPLUSRounded1c-ExtraBold.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_Rounded_1c-static/MPLUSRounded1c-Light.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_Rounded_1c-static/MPLUSRounded1c-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_Rounded_1c-static/MPLUSRounded1c-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/M_PLUS_Rounded_1c-static/MPLUSRounded1c-Thin.ttf");
+}
+
+@font-face {
+	font-family: "Mochiy Pop One";
+	src: url("/src/font/GoogleFontsJapanese/MochiyPopOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Mochiy Pop P One";
+	src: url("/src/font/GoogleFontsJapanese/MochiyPopPOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Murecho";
+	src: url("/src/font/GoogleFontsJapanese/Murecho-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "New Tegomin";
+	src: url("/src/font/GoogleFontsJapanese/NewTegomin-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Potta One";
+	src: url("/src/font/GoogleFontsJapanese/PottaOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Rampat One";
+	src: url("/src/font/GoogleFontsJapanese/");
+}
+
+@font-face {
+	font-family: "Raggae One";
+	src: url("/src/font/GoogleFontsJapanese/ReggaeOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Rock n Roll One";
+	src: url("/src/font/GoogleFontsJapanese/RocknRollOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Sawarabi Gothic";
+	src: url("/src/font/GoogleFontsJapanese/SawarabiGothic-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Shippori Antique";
+	src: url("/src/font/GoogleFontsJapanese/ShipporiAntique-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Shippori Antique B1";
+	src: url("/src/font/GoogleFontsJapanese/ShipporiAntiqueB1-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Shippori Mincho";
+	src:
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho-static/ShipporiMincho-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho-static/ShipporiMincho-ExtraBold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho-static/ShipporiMincho-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho-static/ShipporiMincho-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho-static/ShipporiMincho-SemiBold.ttf");
+}
+@font-face {
+	font-family: "Shippori Mincho B1";
+	src:
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho_B1-static/ShipporiMinchoB1-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho_B1-static/ShipporiMinchoB1-ExtraBold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho_B1-static/ShipporiMinchoB1-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho_B1-static/ShipporiMinchoB1-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/Shippori_Mincho_B1-static/ShipporiMinchoB1-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Stick";
+	src: url("/src/font/GoogleFontsJapanese/Stick-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Yuji Boku";
+	src: url("/src/font/GoogleFontsJapanese/YujiBoku-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Yuji Mai";
+	src: url("/src/font/GoogleFontsJapanese/YujiMai-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Yuji Syuku";
+	src: url("/src/font/GoogleFontsJapanese/YujiSyuku-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Yusei Magic";
+	src: url("/src/font/GoogleFontsJapanese/YuseiMagic-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Zen Antique";
+	src: url("/src/font/GoogleFontsJapanese/ZenAntique-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Zen Antique Soft";
+	src: url("/src/font/GoogleFontsJapanese/ZenAntiqueSoft-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Zen Kaku Gothic Antique";
+	src:
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_Antique-static/ZenKakuGothicAntique-Black.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_Antique-static/ZenKakuGothicAntique-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_Antique-static/ZenKakuGothicAntique-Light.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_Antique-static/ZenKakuGothicAntique-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_Antique-static/ZenKakuGothicAntique-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Zen Kaku Gothic New";
+	src:
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_New-static/ZenKakuGothicNew-Black.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_New-static/ZenKakuGothicNew-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_New-static/ZenKakuGothicNew-Light.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_New-static/ZenKakuGothicNew-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Kaku_Gothic_New-static/ZenKakuGothicNew-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Zen Kurenaido";
+	src: url("/src/font/GoogleFontsJapanese/ZenKurenaido-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Zen Maru Gothic";
+	src:
+		url("/src/font/GoogleFontsJapanese/Zen_Maru_Gothic-static/ZenMaruGothic-Black.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Maru_Gothic-static/ZenMaruGothic-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Maru_Gothic-static/ZenMaruGothic-Light.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Maru_Gothic-static/ZenMaruGothic-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Maru_Gothic-static/ZenMaruGothic-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Zen Old Mincho";
+	src:
+		url("/src/font/GoogleFontsJapanese/Zen_Old_Mincho-static/ZenOldMincho-Black.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Old_Mincho-static/ZenOldMincho-Bold.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Old_Mincho-static/ZenOldMincho-Medium.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Old_Mincho-static/ZenOldMincho-Regular.ttf"),
+		url("/src/font/GoogleFontsJapanese/Zen_Old_Mincho-static/ZenOldMincho-SemiBold.ttf");
+}
