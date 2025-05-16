@@ -1,4 +1,10 @@
 [
+	
+	{
+		"en": "Sunday",
+		"en-short": "Sun",
+		"ja": "日"
+	},
 	{
 		"en": "Monday",
 		"en-short": "Mon",
@@ -28,10 +34,5 @@
 		"en": "Saturday",
 		"en-short": "Sat",
 		"ja": "土"
-	},
-	{
-		"en": "Sunday",
-		"en-short": "Sun",
-		"ja": "日"
 	}
 ]
