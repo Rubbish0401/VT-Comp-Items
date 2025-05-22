@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<!--<meta name="google-adsense-account" content="ca-pub-8799987832232140">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-5477BM6GNC"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'G-5477BM6GNC');
+		</script>-->
+
+		<!-- Viewport and Charset -->
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+		<meta charset="utf-8" />
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="/styles/global-initialisation.css">
+		<link rel="stylesheet" href="/styles/counter/counter-controller-0/counter-controller-0-structure.css">
+		<link rel="stylesheet" href="/styles/counter/counter-controller-0/counter-controller-0-face.css">
+
+		<!-- Scripts -->
+		<script src="/scripts/counter/counter-base-header.js"></script>
+		<script src="/scripts/counter/counter-base.js" type="module"></script>
+		<script src="/scripts/counter/counter-controller-0.js" type="module"></script>
+
+		<!-- Others -->
+		<link rel="icon" href="/src/images/svg/vtcomp_mark.svg">
+		<title>
+			VT-Comp | Controller(Type-0)
+		</title>
+
+		<!-- End -->
+	</head>
+
+	<body>
+		<div class="part-block container">
+			<div class="part-block label-container">
+				<span class="label display-label">カウンター</span>
+				<input id="label-input" class="label input-label" type="text" autocorrect="off" autocomplete="off" placeholder="name">
+			</div>
+
+			<div class="part-block back-count">
+				<div class="centring container-count">
+					<input id="count" class="display-count" type="number" step="1" min="0" placeholder="count" autocomplete="off">
+				</div>
+			</div>
+
+			<div class="part-block max-container">
+				<div id="max-decrease" class="">
+					-1
+				</div>
+
+				<input id="max-input" class="" type="number" step="0" min="0" placeholder="max" autocomplete="off">
+
+				<div id="max-increase">
+					+1
+				</div>
+			</div>
+
+			<div class="part-block">
+				<div id="count-increase" class="centring button">
+					<span class="button-inner">
+						+1
+					</span>
+				</div>
+
+				<div id="count-decrease" class="part-block centring button">
+					<span class="button-inner">
+						-1
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

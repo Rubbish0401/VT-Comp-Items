@@ -1,0 +1,134 @@
+body{
+}
+
+/* */
+.container{
+	max-width: 400px;
+	width: 100%;
+	height: fit-content;
+	min-height: 100vh;
+
+	display: block;
+}
+
+/* */
+.part-block{
+	width: 100%;
+	height: fit-content;
+
+	padding: 8px 16px;
+}
+
+.centring{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gravity-right{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+}
+
+/* */
+.label-container{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.label{}
+
+.input-label{
+	width: fit-content;
+	max-width: 60%;
+	line-height: 48px;
+}
+
+.display-label{
+	width: fit-content;
+	transform: translateY(0px);
+	text-wrap: nowrap;
+	line-height: 42px;
+}
+
+/* */
+.back-count{
+}
+
+.container-count{
+	width: 100%;
+	height: fit-content;
+	aspect-ratio: 2;
+}
+
+.display-count{
+	width: 100%;
+	line-height:  128px;
+	backdrop-filter: opacity(0%);
+}
+
+.display-count::-webkit-inner-spin-button{
+	display: none;
+}
+
+/* */
+.button{
+	padding: 16px 0px;
+	user-select: none;
+}
+
+.button-inner{
+	line-height: 96px; 
+}
+
+/* Max Editor */
+.max-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#max-input{
+	width: calc(100% - 124px);
+	height: fit-content;
+
+	line-height: 40px;
+	padding: 4px;
+	margin: 0px 8px;
+}
+
+#max-input::-webkit-inner-spin-button{
+	display: none;
+}
+
+#max-increase,
+#max-decrease{
+	width: fit-content;
+
+	line-height: 34px;
+	padding: 4px 16px;
+
+	user-select: none;
+}
+
+/* Count Editor */
+
+#count-increase{
+	width: 100%;
+	aspect-ratio: 2.5;
+}
+
+#count-decrease{
+	width: 100%;
+	margin-top: 16px;
+}
+
+#count-decrease > .button-inner{
+	line-height: 48px;
+}

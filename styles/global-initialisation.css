@@ -1,3 +1,5 @@
+@import url("/styles/font/Google.css");
+
 /* Structure */
 *{
 	margin: 0;
@@ -27,6 +29,6 @@ body *{
 
 /* Face */
 html{
-	font-family: "Noto Sans JP", "Open Sans";
+	font-family: "Open Sans", "Noto Sans JP";
 	color: #5F6368;
 }

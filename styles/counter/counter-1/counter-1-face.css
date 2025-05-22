@@ -1,0 +1,70 @@
+:root{
+	--border-width: 4px;
+	--shadow-offset-x: 48px;
+	--shadow-offset-y: 32px;
+	--roundness: 8px;
+
+	--font-colour: #5F6368;
+	--border-colour: black;
+	--topbar-colour: hsl(180, 100%, 93%);
+	--window-bg-colour: white;
+	--shadow-colour: hsl(40, 80%, 85%);
+}
+
+.back{
+	background: transparent;
+	font-family: "Hachi Maru Pop";
+	color: var(--font-colour);
+}
+
+/* */
+.text-container{
+}
+
+#count{
+	font-size: 80px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#label-1{
+	font-size: 18px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.text{
+	font-size: 24px;
+	text-align: center;
+}
+
+.text.left{
+	text-align: left;
+}
+
+.text.right{
+	text-align: right;
+}
+
+/**/
+.window{
+	border-radius: var(--roundness);
+	box-shadow:
+		0px 0px 0px var(--border-width) var(--border-colour),
+		var(--shadow-offset-x) var(--shadow-offset-y) 0px 0px var(--shadow-colour),
+		var(--shadow-offset-x) var(--shadow-offset-y) 0px var(--border-width) var(--border-colour);
+
+	overflow: hidden;
+}
+
+.window-bar{
+	background: var(--topbar-colour);
+}
+
+.window-bar-btn{
+	fill: var(--font-colour);
+}
+
+.window-body{
+	background: var(--window-bg-colour);
+}

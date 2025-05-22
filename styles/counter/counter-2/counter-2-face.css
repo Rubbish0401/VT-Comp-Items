@@ -1,0 +1,93 @@
+:root{
+	--border-colour: black;
+	--frame-colour: hsl(0, 0%, 85%);
+
+	--hue: 120;
+	--fill-colour-1: hsla(var(--hue), 100%, 75%, 75%);
+	--fill-colour-2: hsla(var(--hue), 100%, 90%, 75%);
+
+	--font: "Open Sans";
+	--font-colour: hsl(180, 5%, 40%);
+	--shadow-colour: hsl(0, 0%, 0%);
+}
+
+/**/
+@property --phase{
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 0vw;
+}
+
+@keyframes colour-phasing {
+	0%{ --phase: 0vw; }
+	100%{ --phase: 100vw; }
+}
+
+/**/
+
+body{
+	
+}
+
+/**/
+.progressbar-back{
+	border-radius: var(--bar-thickness);
+	border-style: solid;
+	border-color: var(--border-colour);
+	background: var(--frame-colour);
+}
+
+.progressbar-body{
+	border-radius: calc(var(--bar-thickness) - var(--border-width) - var(--padding));
+	border-style: solid;
+	border-color: var(--border-colour);
+
+	background: white;
+	overflow: hidden;
+}
+
+.progressbar-progress{
+	border-radius: calc(var(--bar-thickness) - 2 * var(--border-width) - var(--padding));
+	background: linear-gradient(
+		90deg in hsl shorter hue,
+		var(--fill-colour-1) 0vw,
+		var(--fill-colour-2) 100vw
+	),
+	linear-gradient(
+		180deg,
+		hsla(0, 0%, 0%, 0%) 0% 50%,
+		hsla(0, 0%, 0%, 25%) 50% 100%
+	);
+
+	animation: colour-phasing 0.5s linear infinite;
+	animation-play-state: paused;
+}
+
+.progressbar-progress.anim{
+	background: repeating-linear-gradient(
+		90deg in hsl longer hue,
+		hsla(0, 100%, 75%, 50%) calc(0vw + var(--phase)),
+		hsla(360, 100%, 75%, 50%) calc(100vw + var(--phase))
+	),
+	linear-gradient(
+		180deg,
+		hsla(0, 0%, 0%, 0%) 0% 50%,
+		hsla(0, 0%, 0%, 25%) 50% 100%
+	);
+
+	animation-play-state: running;
+}
+
+/**/
+.display{
+	
+}
+
+#count{
+	font-family: var(--font);
+	font-size: 54px;
+	font-weight: 600;
+	color: var(--font-colour);
+
+	-webkit-text-stroke: 0px var(--shadow-colour);
+}

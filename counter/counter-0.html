@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<!-- Google tag (gtag.js) -->
-		<meta name="google-adsense-account" content="ca-pub-8799987832232140">
+		<!--<meta name="google-adsense-account" content="ca-pub-8799987832232140">
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-5477BM6GNC"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -9,28 +9,38 @@
 			gtag('js', new Date());
 
 			gtag('config', 'G-5477BM6GNC');
-		</script>
+		</script>-->
 
 		<!-- Viewport and Charset -->
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
 		<meta charset="utf-8" />
 
 		<!-- Stylesheets -->
+		<link rel="stylesheet" href="/styles/font.css">
 		<link rel="stylesheet" href="/styles/global-initialisation.css">
+		<link rel="stylesheet" href="/styles//counter/counter-0/counter-0-structure.css">
+		<link rel="stylesheet" href="/styles//counter/counter-0/counter-0-face.css">
 
 		<!-- Scripts -->
-		<script src="/scripts/clock/clock-0-mini.js" type="module"></script>
+		<script src="/scripts/counter/counter-base-header.js"></script>
+		<script src="/scripts/counter/counter-base.js" type="module"></script>
+		<script src="/scripts/counter/counter-0.js"></script>
 
 		<!-- Others -->
 		<link rel="icon" href="/src/images/svg/vtcomp_mark.svg">
 		<title>
-			VT-Comp | Clock(Type-0 mini)
+			VT-Comp | Counter(Type-0)
 		</title>
 
 		<!-- End -->
 	</head>
 
 	<body>
-		
+		<div class="back">
+			<div class="container">
+				<span id="count"></span>
+				<span id="label"></span>
+			</div>
+		</div>
 	</body>
 </html>

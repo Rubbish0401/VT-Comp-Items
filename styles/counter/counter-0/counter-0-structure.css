@@ -1,0 +1,34 @@
+:root{
+	--shadow-thickness: 16px;
+}
+
+/**/
+.back{
+	width: 500px;
+	height: calc(250px + var(--shadow-thickness));
+
+	padding: var(--shadow-thickness);
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	
+	position: relative;
+	user-select: none;
+}
+
+/**/
+#count{
+	line-height: 96px;
+}
+
+#label{
+	
+}

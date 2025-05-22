@@ -1,0 +1,113 @@
+body{
+}
+
+/* */
+.container{
+	background: hsl(45, 95%, 55%);
+}
+
+/* */
+.part-block{
+}
+
+.centring{
+}
+
+/* */
+.label{
+	font-family: "Open Sans", "Noto Sans JP";
+	font-size: 32px;
+	font-weight: 800;
+
+	color: #5F6368;
+}
+
+.input-label{
+	outline: none;
+	border: none;
+	text-align: center;
+
+	background: transparent;
+}
+
+.display-label{
+	font-size: 24px;
+}
+
+/* */
+.back-count{
+	border-radius: 32px;
+}
+
+.container-count{
+	border-radius: 16px;
+	background: white;
+}
+
+.display-count{
+	outline: none;
+	border: none;
+
+	font-size:  100px;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+
+	background: transparent;
+	color: #5F6368;
+}
+
+/**/
+.button{
+	border-radius: 16px;
+}
+
+.button-inner{
+	font-size: 80px;
+}
+
+/* Max Editor */
+.max-container{
+	
+}
+
+#max-input{
+	outline: none;
+	border: none;
+
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+
+	background: hsl(0, 0%, 100%);
+	color: #5F6368;
+	opacity: 80%;
+
+	border-radius: 8px;
+}
+
+#max-increase,
+#max-decrease{
+	font-size: 24px;
+	border-radius: 8px;
+
+	background: hsl(0, 0%, 90%);
+	color: hsl(0, 0%, 60%);
+}
+
+/**/
+
+#count-increase{
+	background: #5F6368;
+	color: hsl(45, 80%, 60%);
+}
+
+#count-decrease{
+	background: #9FA3A8;
+	color: hsl(45, 80%, 80%);
+	opacity: 750%;
+}
+
+#count-decrease > .button-inner{
+	font-size: 40px;
+}

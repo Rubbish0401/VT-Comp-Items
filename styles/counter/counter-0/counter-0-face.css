@@ -1,0 +1,54 @@
+:root{
+	--border-thickness: 8px;
+	--shadow-colour: hsl(180, 10%, 45%);
+}
+
+
+@property --hue{
+	syntax: '<number>';
+	inherits: false;
+	initial-value: 0;
+}
+
+@keyframes hue{
+	0% {
+		--hue: 180;
+	}
+
+	100% {
+		--hue: 180;
+	}
+}
+
+/**/
+.container{
+	border-radius: 32px;
+	background: hsl(0, 0%, 15%);
+
+	box-shadow: 
+		0px 0px var(--shadow-thickness) hsl(var(--hue), 100%, 60%),
+		0px 0px var(--shadow-thickness) hsl(var(--hue), 100%, 60%) inset;
+
+	border: var(--border-thickness) solid hsl(var(--hue), 100%, 95%);
+	animation: hue 5s ease infinite;
+}
+
+
+/**/
+#count,
+#label{
+	font-family: 'Dela Gothic One';
+	color: hsl(var(--hue), 100%, 95%);
+	text-shadow: 0px 0px 16px hsl(var(--hue), 100%, 60%);
+
+	animation: hue 5s ease infinite;
+}
+
+
+#count{
+	font-size: 96px;
+}
+
+#label{
+	font-size: 48px;
+}
