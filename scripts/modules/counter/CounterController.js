@@ -5,7 +5,7 @@ const MAX_DIGIT = 5;
 //
 
 const INITIAL_LABEL = "おはよう";
-const INITIAL_MAX = 1;
+const INITIAL_MAX = 100;
 const INITIAL_COUNT = 0;
 
 //
