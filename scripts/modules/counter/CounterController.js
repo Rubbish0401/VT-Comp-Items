@@ -77,8 +77,8 @@ export class CounterController{
 		for(let func of this.#listeners["change-count"]) func({ type: "change-count", target: this, before: before, after: after });
 	}
 	
-	addCount(count){
-		if(!isNaN(count)) this.setCount(this.count + count);
+	addCount(count, in_range = false){
+		if(!isNaN(count)) this.setCount(this.count + count, in_range);
 	}
 	
 	setLabel(str){

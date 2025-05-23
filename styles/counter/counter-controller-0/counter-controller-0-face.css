@@ -57,6 +57,18 @@ body{
 	color: #5F6368;
 }
 
+#limit-toggle{
+	border-radius: 8px;
+}
+
+#limit-toggle:hover{
+	background: hsla(0, 100%, 90%, 25%);
+}
+
+#limit-toggle.enabled{
+	background: hsla(0, 100%, 90%, 50%);
+}
+
 /**/
 .button{
 	border-radius: 16px;

@@ -63,6 +63,8 @@ body{
 	width: 100%;
 	height: fit-content;
 	aspect-ratio: 2;
+
+	position: relative;
 }
 
 .display-count{
@@ -73,6 +75,17 @@ body{
 
 .display-count::-webkit-inner-spin-button{
 	display: none;
+}
+
+#limit-toggle{
+	width: fit-content;
+	height: 32px;
+	
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	
+	padding: 8px;
 }
 
 /* */
