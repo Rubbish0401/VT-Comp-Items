@@ -33,3 +33,15 @@ function setData(obj){
 		localStorage.setItem(COUNTER_SAVING_KEY, JSON.stringify(data));
 	}
 }
+
+//
+getFlag = function(){
+	let flag = JSON.parse(localStorage.getItem(FLAG_SAVING_KEY));
+	return typeof flag == "boolean" ? flag : INITIAL_FLAG;
+};
+
+saveFlag = function(flag){
+	if(typeof flag != "boolean") flag = INITIAL_FLAG;
+	localStorage.setItem(FLAG_SAVING_KEY, String(flag));
+	console.log("save flag", flag);
+};
