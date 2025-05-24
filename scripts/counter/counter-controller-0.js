@@ -27,6 +27,8 @@ var longclickInterval;
 //
 
 document.addEventListener("DOMContentLoaded", root_event => {
+	limitFlag = getFlag();
+
 	// Get Elements
 	labelInput = document.getElementById("label-input");
 
@@ -43,6 +45,8 @@ document.addEventListener("DOMContentLoaded", root_event => {
 	labelInput.value = controller.label;
 	display.value = controller.count;
 	maxDisplay.value = controller.max;
+
+	if(limitFlag) limitToggle.classList.add(LIMIT_MAX_KEY);
 
 	// Add Event Listeners
 	controller.addEventListener("import", obj => { 
@@ -72,6 +76,9 @@ document.addEventListener("DOMContentLoaded", root_event => {
 	limitToggle.addEventListener("click", event => {
 		if(!limitToggle.classList.contains(LIMIT_MAX_KEY)) limitToggle.classList.add(LIMIT_MAX_KEY);
 		else limitToggle.classList.remove(LIMIT_MAX_KEY);
+
+		limitFlag = limitToggle.classList.contains(LIMIT_MAX_KEY);
+		saveFlag(limitFlag);
 	});
 	
 	maxDisplay.addEventListener("change", event => { controller.setMax(Number(maxDisplay.value)); });
@@ -112,11 +119,11 @@ document.addEventListener("DOMContentLoaded", root_event => {
 	countDecBtn.addEventListener("pointerup", cancelLongclick);
 	countDecBtn.addEventListener("pointerout", cancelLongclick);
 
-	countIncBtn.addEventListener("click", event => { controller.addCount(1, limitToggle.classList.contains("enabled")); });
+	countIncBtn.addEventListener("click", event => { controller.addCount(1, limitFlag); });
 	countIncBtn.addEventListener("pointerdown", event => {
 		if(!longclickInterval) longclickPrepare = setTimeout(() => {
 			longclickInterval = setInterval(() => {
-				controller.addCount(1, limitToggle.classList.contains(LIMIT_MAX_KEY));
+				controller.addCount(1, limitFlag);
 			}, LONGCLICK_INTERVAL);
 			longclickPrepare = null;
 		}, LONGCLICK_WAIT);
