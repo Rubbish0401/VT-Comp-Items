@@ -1,0 +1,13 @@
+.progress{
+	border-style: solid;
+	border-color: black;
+	border-width: var(--border-width);
+}
+
+.bit.shown{
+	background: linear-gradient(
+		90deg in hsl shorter hue,
+		hsl(var(--hue), 100%, 90%) 0%,
+		hsl(var(--hue), 100%, 70%) 100%
+	);
+}

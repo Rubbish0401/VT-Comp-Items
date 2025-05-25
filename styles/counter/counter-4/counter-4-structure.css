@@ -1,0 +1,27 @@
+:root{
+	--border-width: 4px;
+	--gap: 4px;
+	--bit-width: calc((100vw - 2 * var(--border-width) - (var(--bit-count) + 1) * var(--gap)) / var(--bit-count));
+}
+
+/**/
+.progress{
+	width: 100vw;
+	height: fit-content;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	padding: calc(var(--gap) / 2);
+}
+
+.bit{
+	width: var(--bit-width);
+	height: auto;
+	aspect-ratio: 1 / 2;
+
+	margin: calc(var(--gap) / 2);
+}

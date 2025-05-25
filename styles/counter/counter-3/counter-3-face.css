@@ -1,0 +1,62 @@
+:root{
+	--hue: 180;
+
+	--label-font: "Noto Serif JP";
+	--label-size: 24px;
+	--label-weight: 800;
+
+	--number-font: "Noto Serif";
+	--number-size: 28px;
+	--number-weight: 500;
+
+	--colour: black;
+}
+
+/**/
+body{}
+
+/**/
+.progressbar-back{}
+
+/**/
+.progressbar-body{
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+	border-color: var(--colour);
+}
+
+.progressbar{
+	background: linear-gradient(
+		90deg in hsl shorter hue,
+		hsla(var(--hue), 100%, 90%, 100%) 0%,
+		hsla(calc(var(--hue) + 60), 100%, 90%, 100%) 100%
+	);
+}
+
+.progress-labels{}
+
+.progress-label{
+	font-family: var(--number-font);
+	font-size: var(--number-size);
+	font-weight: var(--number-weight);
+	color: var(--colour);
+
+	text-align: center;
+}
+
+.progress-label:first-child{
+	text-align: left;
+}
+
+.progress-label:last-child{
+	text-align: right;
+}
+
+/**/
+.label{
+	font-family: var(--label-font);
+	font-style: italic;
+	font-size: var(--label-size);
+	font-weight: var(--label-weight);
+	color: var(--colour);
+}
