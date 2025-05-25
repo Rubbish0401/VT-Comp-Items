@@ -97,7 +97,7 @@ export class CounterController{
 		if(typeof obj == "object"){
 			if(obj.hasOwnProperty("label")){
 				let text = String(obj.label);
-				this.#label = text.length > 0 ? String(obj.label) : INITIAL_LABEL;
+				this.#label = text.length > 0 ? text : INITIAL_LABEL;
 			}
 
 			if(obj.hasOwnProperty("max")) this.#max = !isNaN(obj.max) && 0 < obj.max && obj.max < 10 ** MAX_DIGIT ? Number.parseInt(obj.max) : INITIAL_MAX;
