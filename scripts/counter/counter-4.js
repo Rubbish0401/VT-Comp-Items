@@ -1,8 +1,12 @@
 //
 
-const count = 50;
+const HUE_CONTROL_KEY = "hue";
+
+const count = 20;
 
 //
+
+var hue;
 
 var container;
 var bits;
@@ -13,12 +17,19 @@ document.addEventListener("DOMContentLoaded", root_event => {
 	document.querySelector(":root").style.setProperty("--bit-count", count);
 
 	//
+	let params = (new URL(location.href)).searchParams;
+	if(params.has(HUE_CONTROL_KEY)){
+		let value = Number(params.get(HUE_CONTROL_KEY));
+		if(!isNaN(value)) hue = value;
+	}
+
+	//
 	container = document.getElementById("progress");
 	bits = [...(function*(){
 		for(let i = 0; i < count; i++){
 			let bit = document.createElement("div");
 			bit.classList.add("bit");
-			bit.style.setProperty("--hue", 360 * i / count);
+			bit.style.setProperty("--hue", hue ? hue : 360 * i / count);
 
 			yield bit;
 		}
