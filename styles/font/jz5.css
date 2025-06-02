@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "Form UDPGothic";
+	src:
+		url("/src/font/jz5/FORMUDPGothic-Regular.ttf"),
+		url("/src/font/jz5/FORMUDPGothic-Bold.ttf");
+}
+
+@font-face {
+	font-family: "帳票 UDPゴシック";
+	src:
+		url("/src/font/jz5/FORMUDPGothic-Regular.ttf"),
+		url("/src/font/jz5/FORMUDPGothic-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Form UDPMincho";
+	src:
+		url("/src/font/jz5/FORMUDPMincho-Regular.ttf"),
+		url("/src/font/jz5/FORMUDPMincho-Bold.ttf");
+}
+
+@font-face {
+	font-family: "帳票 UDP明朝";
+	src:
+		url("/src/font/jz5/FORMUDPMincho-Regular.ttf"),
+		url("/src/font/jz5/FORMUDPMincho-Bold.ttf");
+}

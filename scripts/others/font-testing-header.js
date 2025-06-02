@@ -96,6 +96,9 @@ const FONT_NAMES = [
 	"Zen Kurenaido",
 	"Zen Maru Gothic",
 	"Zen Old Mincho",
+
+	"帳票 UDPゴシック",
+	"帳票 UDP明朝",
 ];
 
 //
