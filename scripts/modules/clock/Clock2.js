@@ -30,11 +30,6 @@ export class Clock2{
 
 	constructor(){
 		let now = new Date();
-		now.setHours(10);
-		now.setMinutes(8);
-		now.setSeconds(42);
-		now.setMilliseconds(0);
-
 		let gap_seconds = now.getSeconds() + now.getMilliseconds() / 1000;
 
 		// Create Elements
