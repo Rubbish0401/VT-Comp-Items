@@ -1,0 +1,42 @@
+:root{
+	--primary-colour: black;
+	--secondary-colour: red;
+	--bg-colour: hsl(0, 0%, 90%);
+
+	--colour-mark: var(--primary-colour);
+	--colour-hour: var(--primary-colour);
+	--colour-minute: var(--primary-colour);
+	--colour-second: var(--secondary-colour);
+
+	--background: var(--bg-colour);
+	--bg-opacity: 100%;
+}
+
+/**/
+.clock2{
+	&.layer{
+		&.layer-0{
+		}
+	}
+
+	&.container{
+	}
+
+	&.layer-0{
+		border-radius: 50%;
+		background: var(--background);
+		filter: opacity(var(--bg-opacity));
+	}
+
+	&.layer-1 > .mark{
+		background: var(--colour-mark);
+	}
+
+	&.hand{
+		transform: translateY(calc(-50% + 32px));
+
+		&.layer-2{ background: var(--colour-hour); }
+		&.layer-3{ background: var(--colour-minute); }
+		&.layer-4{ background: var(--colour-second); }
+	}
+}

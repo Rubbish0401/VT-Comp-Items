@@ -1,0 +1,118 @@
+:root{
+	--clock-width: 500;
+	--clock-height: 500; 
+}
+
+/**/
+@property --angle{
+	syntax: '<angle>';
+	inherits: false;
+	initial-value: 0turn;
+}
+
+@keyframes ticking {
+	0%{ --angle: 0turn; }
+	100%{ --angle: 1turn; }
+}
+
+/**/
+
+.clock2{
+	&.layer{
+		width: var(--clock-width);
+		height: var(--clock-height);
+
+		position: absolute;
+
+		&.layer-1,
+		&.layer-2,
+		&.layer-3,
+		&.layer-4{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&.container{
+		display: block;
+		position: relative;
+	}
+
+	&.layer-1{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+		& > .mark{
+			width: auto;
+			height: 60px;
+			aspect-ratio: 1 / 10;
+
+			position: absolute;
+		}
+	}
+
+	/* hour hand */
+	&.layer-2{
+		animation: ticking 43200s linear infinite;
+
+		&.layer{
+			transform: rotate(var(--angle));
+		}
+
+		&.hand{
+			width: 12px;
+			height: calc(0.3px /
+				sqrt(
+					pow(sin(var(--angle)) / var(--clock-width), 2)
+					+ pow(cos(var(--angle)) / var(--clock-height), 2)
+				)
+			);
+		}
+	}
+	
+	/* minute hand */
+	&.layer-3{
+		animation: ticking 3600s linear infinite;
+
+		&.layer{
+			transform: rotate(var(--angle));
+		}
+
+		&.hand{
+			width: 8px;
+			height: calc(0.45px /
+				sqrt(
+					pow(sin(var(--angle)) / var(--clock-width), 2)
+					+ pow(cos(var(--angle)) / var(--clock-height), 2)
+				)
+			);
+		}
+	}
+
+	/* second hand */
+	&.layer-4{
+		animation: ticking 60s linear infinite;
+
+		&.layer{
+			transform: rotate(var(--angle));
+		}
+
+		&.hand{
+			width: 4px;
+			height: calc(0.5px /
+				sqrt(
+					pow(sin(var(--angle)) / var(--clock-width), 2)
+					+ pow(cos(var(--angle)) / var(--clock-height), 2)
+				)
+			);
+		}
+	}
+
+	&.layer-2,
+	&.layer-3,
+	&.layer-4{
+		animation-play-state: paused;
+	}
+}
