@@ -10,7 +10,7 @@
 	initial-value: 0turn;
 }
 
-@keyframes ticking {
+@keyframes rotating {
 	0%{ --angle: 0turn; }
 	100%{ --angle: 1turn; }
 }
@@ -55,10 +55,14 @@
 
 	/* hour hand */
 	&.layer-2{
-		animation: ticking 43200s linear infinite;
+		animation-duration: 43200s;
 
 		&.layer{
 			transform: rotate(var(--angle));
+
+			&.ticking{
+				transform: rotate(calc(round(down, var(--angle), 60deg)));
+			}
 		}
 
 		&.hand{
@@ -74,10 +78,14 @@
 	
 	/* minute hand */
 	&.layer-3{
-		animation: ticking 3600s linear infinite;
+		animation-duration: 3600s;
 
 		&.layer{
 			transform: rotate(var(--angle));
+
+			&.ticking{
+				transform: rotate(calc(round(down, var(--angle), 6deg)));
+			}
 		}
 
 		&.hand{
@@ -93,10 +101,14 @@
 
 	/* second hand */
 	&.layer-4{
-		animation: ticking 60s linear infinite;
+		animation-duration: 60s;
 
 		&.layer{
 			transform: rotate(var(--angle));
+
+			&.ticking{
+				transform: rotate(calc(round(down, var(--angle), 6deg)));
+			}
 		}
 
 		&.hand{
@@ -108,5 +120,14 @@
 				)
 			);
 		}
+	}
+
+	/* hands */
+	&.layer-2,
+	&.layer-3,
+	&.layer-4{
+		animation-name: rotating;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
 	}
 }

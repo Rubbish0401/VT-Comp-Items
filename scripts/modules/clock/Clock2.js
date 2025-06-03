@@ -10,6 +10,8 @@ const STYLES = [
 const CLOCK_SIZE_WIDTH = 500;
 const CLOCK_SIZE_HEIGHT = 500;
 
+const TICKING_CLASS_NAME = "ticking";
+
 //
 
 document.addEventListener("DOMContentLoaded", root_event => {
@@ -27,6 +29,11 @@ document.addEventListener("DOMContentLoaded", root_event => {
 export class Clock2{
 	
 	#back;
+
+	#ticking = false;
+	#hourLayer;
+	#minuteLayer;
+	#secondLayer;
 
 	constructor(){
 		let now = new Date();
@@ -102,9 +109,36 @@ export class Clock2{
 
 		// Others
 		this.#back = back;
+
+		this.#hourLayer = layer2;
+		this.#minuteLayer = layer3;
+		this.#secondLayer = layer4;
 	}
 
 	//
 
 	get(){ return this.#back; }
+
+	//
+	setDoTicking(bool){
+		if(typeof bool == "boolean"){
+			this.#ticking = bool;
+
+			if(this.tick){
+				this.#hourLayer.classList.add(TICKING_CLASS_NAME);
+				this.#minuteLayer.classList.add(TICKING_CLASS_NAME);
+				this.#secondLayer.classList.add(TICKING_CLASS_NAME);
+			}else{
+				this.#hourLayer.classList.remove(TICKING_CLASS_NAME);
+				this.#minuteLayer.classList.remove(TICKING_CLASS_NAME);
+				this.#secondLayer.classList.remove(TICKING_CLASS_NAME);
+			}
+		}
+	}
+	toggleDoTicking(){
+		this.setDoTicking(!this.tick);
+	}
+
+	isTicking(){ return this.#ticking; }
+	get tick(){ return this.isTicking(); }
 }
