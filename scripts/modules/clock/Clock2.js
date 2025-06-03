@@ -58,12 +58,12 @@ export class Clock2{
 				let item = document.createElement("div");
 				item.classList.add("clock2", "mark");
 
+				let x = `(var(--clock-width) / 2 + ${- height / 2 - gap}) * cos(1turn * ${i} / ${length})`,
+				y = `(var(--clock-height) / 2 + ${- height / 2 - gap}) * sin(1turn *${i} / ${length})`;
+
 				item.style.transform = [
-					`translate(${[
-						`calc(1px * (var(--clock-width) / 2 + ${- height / 2 - gap}) * cos(1turn * ${i} / ${length}))`,
-						`calc(1px * (var(--clock-height) / 2 + ${- height / 2 - gap}) * sin(1turn *${i} / ${length}))`
-					].join(", ")})`,
-					`rotate(calc(0.25turn + 1turn * ${i} / ${length}))`
+					`translate(calc(${x} * 1px), calc(${y} * 1px))`,
+					`rotate(calc(90deg + atan((${y}) / (${x})) ))`
 				].join(" ");
 				item.style.width = width;
 				item.style.height = height;
@@ -95,8 +95,11 @@ export class Clock2{
 		back.style.setProperty("--clock-height", CLOCK_SIZE_HEIGHT);
 
 		layer2.style.animationDelay = `-${gap_seconds + now.getMinutes() * 60 + now.getHours() * 3600}s`;	// gap of hours
+		hourHand.style.animationDelay = `-${gap_seconds + now.getMinutes() * 60 + now.getHours() * 3600}s`;	// gap of hours
 		layer3.style.animationDelay = `-${gap_seconds + now.getMinutes() * 60}s`;	// gap of minutes
+		minuteHand.style.animationDelay = `-${gap_seconds + now.getMinutes() * 60}s`;	// gap of minutes
 		layer4.style.animationDelay = `-${gap_seconds}s`;	// gap of seconds
+		secondHand.style.animationDelay = `-${gap_seconds}s`;	// gap of seconds
 
 		// Add Event Listener
 

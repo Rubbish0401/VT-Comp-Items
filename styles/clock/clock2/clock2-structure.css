@@ -24,13 +24,20 @@
 
 		position: absolute;
 
-		&.layer-1,
+		&.layer-1{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 		&.layer-2,
 		&.layer-3,
 		&.layer-4{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			transform: rotate(var(--angle));
 		}
 	}
 
@@ -57,22 +64,13 @@
 	&.layer-2{
 		animation-duration: 43200s;
 
-		&.layer{
-			transform: rotate(var(--angle));
-
-			&.ticking{
-				transform: rotate(calc(round(down, var(--angle), 60deg)));
-			}
+		&.layer.ticking{
+			transform: rotate(calc(round(down, var(--angle), 60deg)));
 		}
 
 		&.hand{
 			width: 12px;
-			height: calc(0.3px /
-				sqrt(
-					pow(sin(var(--angle)) / var(--clock-width), 2)
-					+ pow(cos(var(--angle)) / var(--clock-height), 2)
-				)
-			);
+			height: calc(0.6px * var(--radius));
 		}
 	}
 	
@@ -80,22 +78,13 @@
 	&.layer-3{
 		animation-duration: 3600s;
 
-		&.layer{
-			transform: rotate(var(--angle));
-
-			&.ticking{
-				transform: rotate(calc(round(down, var(--angle), 6deg)));
-			}
+		&.layer.ticking{
+			transform: rotate(calc(round(down, var(--angle), 6deg)));
 		}
 
 		&.hand{
 			width: 8px;
-			height: calc(0.45px /
-				sqrt(
-					pow(sin(var(--angle)) / var(--clock-width), 2)
-					+ pow(cos(var(--angle)) / var(--clock-height), 2)
-				)
-			);
+			height: calc(0.9px * var(--radius));
 		}
 	}
 
@@ -103,22 +92,13 @@
 	&.layer-4{
 		animation-duration: 60s;
 
-		&.layer{
-			transform: rotate(var(--angle));
-
-			&.ticking{
-				transform: rotate(calc(round(down, var(--angle), 6deg)));
-			}
+		&.layer.ticking{
+			transform: rotate(calc(round(down, var(--angle), 6deg)));
 		}
 
 		&.hand{
 			width: 4px;
-			height: calc(0.5px /
-				sqrt(
-					pow(sin(var(--angle)) / var(--clock-width), 2)
-					+ pow(cos(var(--angle)) / var(--clock-height), 2)
-				)
-			);
+			height: calc(1px * var(--radius));
 		}
 	}
 
@@ -129,5 +109,7 @@
 		animation-name: rotating;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
+
+		--radius: calc(1 / sqrt(pow(sin(var(--angle)) / var(--clock-width), 2) + pow(cos(var(--angle)) / var(--clock-height), 2)) / 2);
 	}
 }
