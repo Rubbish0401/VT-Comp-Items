@@ -150,7 +150,7 @@ function generateID(){
 function newSaveData(base){
 	return {
 		createDate: String(new Date()),
-		identifier: generateID(),
+		identifier: base.identifier || generateID(),
 
 		label: base.label || INITIAL_LABEL,
 		count: !isNaN(base.count) && base.count >= 0 ? base.count : INITIAL_COUNT,
