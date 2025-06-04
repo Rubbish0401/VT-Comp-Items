@@ -40,6 +40,8 @@ export class ClockBase{
 	#interval;
 	#interval_func;
 
+	#date;
+
 	#year;
 	#month;
 	#date;
@@ -80,6 +82,8 @@ export class ClockBase{
 	
 		this.#interval_func = function(){
 			let now = new Date();
+
+			self.#date = now;
 			
 			year.innerText = fillChars(now.getFullYear(), fill * 4);
 			month.innerText = MONTH_LABEL[now.getMonth()][mon];
@@ -110,6 +114,8 @@ export class ClockBase{
 			milliseconds: this.#milliseconds,
 		};
 	}
+	
+	getDateObject(){ return this.#date; }
 
 	//
 	pause(){ clearInterval(this.#interval); this.#interval = null; }
