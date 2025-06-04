@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", root_event => {
 
 export class Clock2{
 	
+	#clockbase;
+
 	#back;
 
 	#ticking = false;
@@ -36,7 +38,8 @@ export class Clock2{
 	#secondLayer;
 
 	constructor(){
-		let now = new Date();
+		this.#clockbase = new ClockBase();
+		let now = this.#clockbase.getDateObject();
 		let gap_seconds = now.getSeconds() + now.getMilliseconds() / 1000;
 
 		// Create Elements
