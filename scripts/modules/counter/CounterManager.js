@@ -44,15 +44,11 @@ export class CounterManager{
 
 	//
 	#get(key){
-		if(!isNaN(key) && 0 <= key && key < this.length){
-			return this.#profiles[Number.parseInt(key)];
-		}else{
-			for(let profile of this.#profiles){
-				if(profile.identifier == key){
-					return profile;
-				}
-			}
+		for(let profile of this.#profiles){
+			if(profile.identifier == key) return profile;
 		}
+
+		if(!isNaN(key) && 0 <= key && key < this.length) return this.#profiles[Number.parseInt(key)];
 	}
 
 	get(key){
