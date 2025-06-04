@@ -6,6 +6,7 @@ export class CounterManager{
 	#callback = {
 		"global": [],
 		"import": [],
+		"modify": [],
 		"add": [],
 		"set": [],
 		"remove": [],
@@ -85,6 +86,7 @@ export class CounterManager{
 		//
 		let after = this.toObject();
 		for(let callback of this.#callback["global"]) callback({ type: "global", target: this, before: before, after: after});
+		for(let callback of this.#callback["modify"]) callback({ type: "global", target: this, before: before, after: after});
 		for(let callback of this.#callback["add"]) callback({ type: "global", target: this, before: before, after: after});
 	}
 
@@ -103,6 +105,7 @@ export class CounterManager{
 		//
 		let after = this.toObject();
 		for(let callback of this.#callback["global"]) callback({ type: "global", target: this, before: before, after: after});
+		for(let callback of this.#callback["modify"]) callback({ type: "global", target: this, before: before, after: after});
 		for(let callback of this.#callback["set"]) callback({ type: "global", target: this, before: before, after: after});
 	}
 
@@ -115,6 +118,7 @@ export class CounterManager{
 		//
 		let after = this.toObject();
 		for(let callback of this.#callback["global"]) callback({ type: "global", target: this, before: before, after: after});
+		for(let callback of this.#callback["modify"]) callback({ type: "global", target: this, before: before, after: after});
 		for(let callback of this.#callback["remove"]) callback({ type: "global", target: this, before: before, after: after});
 	}
 
