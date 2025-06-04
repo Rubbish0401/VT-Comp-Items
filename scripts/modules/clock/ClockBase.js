@@ -54,6 +54,7 @@ export class ClockBase{
 
 	constructor(fill = true, lang = "en-short", mon = "short", mon_par = false){
 		let self = this;
+		this.#date_obj = new Date();
 
 		// Create Elements
 		let year = document.createElement("div");
