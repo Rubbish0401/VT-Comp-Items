@@ -1,7 +1,7 @@
 import { INITIAL_LABEL, INITIAL_COUNT, INITIAL_MAX } from "./CounterController.js";
 
 export class CounterManager{
-	#profiles;
+	#profiles = [];
 	
 	#callback = {
 		"global": [],
@@ -82,7 +82,7 @@ export class CounterManager{
 		//
 		let after = this.toObject();
 		for(let callback of this.#callback["global"]) callback({ type: "global", target: this, before: before, after: after});
-		for(let callback of this.#callback["import"]) callback({ type: "global", target: this, before: before, after: after});
+		for(let callback of this.#callback["add"]) callback({ type: "global", target: this, before: before, after: after});
 	}
 
 	set(key, obj){
@@ -100,7 +100,7 @@ export class CounterManager{
 		//
 		let after = this.toObject();
 		for(let callback of this.#callback["global"]) callback({ type: "global", target: this, before: before, after: after});
-		for(let callback of this.#callback["import"]) callback({ type: "global", target: this, before: before, after: after});
+		for(let callback of this.#callback["set"]) callback({ type: "global", target: this, before: before, after: after});
 	}
 
 	remove(index){
@@ -112,7 +112,7 @@ export class CounterManager{
 		//
 		let after = this.toObject();
 		for(let callback of this.#callback["global"]) callback({ type: "global", target: this, before: before, after: after});
-		for(let callback of this.#callback["import"]) callback({ type: "global", target: this, before: before, after: after});
+		for(let callback of this.#callback["remove"]) callback({ type: "global", target: this, before: before, after: after});
 	}
 
 	//
