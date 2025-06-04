@@ -66,7 +66,13 @@ export class CounterManager{
 	}
 
 	getLength(){ return this.#profiles.length; }
+	getIDs(){
+		let self = this;
+		return [...(function*(){for(let i = 0; i < self.length; i++) yield self.get(i).identifier; })()];
+	}
+
 	get length(){ return this.getLength(); }
+	get ids(){ return this.getIDs(); }
 
 	//
 	add(obj, index = this.length){
