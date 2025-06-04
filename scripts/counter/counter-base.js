@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", root_event => {
 	let savedData = getDataOld();
 	if(savedData){
 		manager.import([savedData]);
-		// localStorage.removeItem(COUNTER_SAVING_KEY);
+		saveData(savedData);
+		localStorage.removeItem(COUNTER_SAVING_KEY);
 	}
 	
 	controller = new CounterController();
