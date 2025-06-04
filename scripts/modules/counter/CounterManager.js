@@ -48,7 +48,8 @@ export class CounterManager{
 			if(profile.identifier == key) return profile;
 		}
 
-		if(!isNaN(key) && 0 <= key && key < this.length) return this.#profiles[Number.parseInt(key)];
+		key = Number.parseInt(key);
+		if(!isNaN(key) && 0 <= key && key < this.length) return this.#profiles[key];
 	}
 
 	get(key){
