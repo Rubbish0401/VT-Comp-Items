@@ -68,8 +68,8 @@ export class CounterManager{
 		};
 		else return null;
 	}
-	getLength(){ return this.#profiles.length; }
 
+	getLength(){ return this.#profiles.length; }
 	get length(){ return this.getLength(); }
 
 	//
