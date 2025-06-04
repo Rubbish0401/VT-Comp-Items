@@ -94,7 +94,7 @@ export class CounterController{
 	import(obj){
 		let before = this.get();
 
-		if(typeof obj == "object"){
+		if(obj && typeof obj == "object"){
 			if(obj.hasOwnProperty("label")){
 				let text = String(obj.label);
 				this.#label = text.length > 0 ? text : INITIAL_LABEL;
