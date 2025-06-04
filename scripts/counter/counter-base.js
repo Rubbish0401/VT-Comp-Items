@@ -1,12 +1,18 @@
 import { CounterController } from "../modules/counter/CounterController.js";
 
 document.addEventListener("DOMContentLoaded", root_event => {
-	let params = (new URL(location.href)).searchParams;
+	let url = new URL(location.href);
+	let params = url.searchParams;
 	if(params.has(PROFILE_IDENTIFY_KEY)){
 		let value = params.get(PROFILE_IDENTIFY_KEY);
 		let data = manager.get(value);
 
-		profileKey = data && typeof data == "object" ? data.identifier : 0;
+		if(data && typeof data == "object"){
+			profileKey = data.identifier;
+		}else{
+			params.set(PROFILE_IDENTIFY_KEY, profileKey);
+			location.href = url.toString();
+		}
 	}
 
 	//
