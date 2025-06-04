@@ -4,9 +4,9 @@ const MAX_DIGIT = 5;
 
 //
 
-const INITIAL_LABEL = "おはよう";
-const INITIAL_MAX = 100;
-const INITIAL_COUNT = 0;
+export const INITIAL_LABEL = "おはよう";
+export const INITIAL_MAX = 100;
+export const INITIAL_COUNT = 0;
 
 //
 
@@ -16,7 +16,7 @@ export class CounterController{
 	#max = INITIAL_MAX;
 	#count = INITIAL_COUNT;
 
-	#listeners = {
+	#callback = {
 		"global": [],
 		"change-max": [],
 		"change-count": [],
@@ -59,8 +59,8 @@ export class CounterController{
 		this.import({ max: max });
 
 		let after = this.max;
-		for(let func of this.#listeners["global"]) func({ type: "global", target: this, before: before, after: after });
-		for(let func of this.#listeners["change-max"]) func({ type: "change-max", target: this, before: before, after: after });
+		for(let func of this.#callback["global"]) func({ type: "global", target: this, before: before, after: after });
+		for(let func of this.#callback["change-max"]) func({ type: "change-max", target: this, before: before, after: after });
 	}
 
 	addMax(count){
@@ -73,8 +73,8 @@ export class CounterController{
 		if(!isNaN(count) && 0 <= count && (!in_range || count <= this.max)) this.import({ count: count });
 
 		let after = this.count;
-		for(let func of this.#listeners["global"]) func({ type: "global", target: this, before: before, after: after });
-		for(let func of this.#listeners["change-count"]) func({ type: "change-count", target: this, before: before, after: after });
+		for(let func of this.#callback["global"]) func({ type: "global", target: this, before: before, after: after });
+		for(let func of this.#callback["change-count"]) func({ type: "change-count", target: this, before: before, after: after });
 	}
 	
 	addCount(count, in_range = false){
@@ -87,8 +87,8 @@ export class CounterController{
 		this.import({ label: str });
 
 		let after = this.label;
-		for(let func of this.#listeners["global"]) func({ type: "global", target: this, before: before, after: after });
-		for(let func of this.#listeners["change-label"]) func({ type: "change-label", target: this, before: before, after: after });
+		for(let func of this.#callback["global"]) func({ type: "global", target: this, before: before, after: after });
+		for(let func of this.#callback["change-label"]) func({ type: "change-label", target: this, before: before, after: after });
 	}
 
 	import(obj){
@@ -105,21 +105,21 @@ export class CounterController{
 		}
 
 		let after = this.get();
-		for(let func of this.#listeners["global"]) func({ type: "global", target: this, before: before, after: after });
-		for(let func of this.#listeners["import"]) func({ type: "import", target: this, before: before, after: after });
+		for(let func of this.#callback["global"]) func({ type: "global", target: this, before: before, after: after });
+		for(let func of this.#callback["import"]) func({ type: "import", target: this, before: before, after: after });
 	}
 
 	//
 
 	addEventListener(key, func){
-		if(this.#listeners.hasOwnProperty(key)){
-			this.#listeners[key].push(func);
+		if(this.#callback.hasOwnProperty(key)){
+			this.#callback[key].push(func);
 		}
 	}
 
 	removeEventListener(key, func){
-		if(this.#listeners.hasOwnProperty(key)){
-			this.#listeners[key].filter(value => value != func);
+		if(this.#callback.hasOwnProperty(key)){
+			this.#callback[key].filter(value => value != func);
 		}
 	}
 }
