@@ -1,38 +1,46 @@
 import { CounterController } from "../modules/counter/CounterController.js";
 
 document.addEventListener("DOMContentLoaded", root_event => {
-	let savedData = getData();
+	let params = (new URL(location.href)).searchParams;
+	if(params.has(PROFILE_IDENTIFY_KEY)){
+		let value = params.get(PROFILE_IDENTIFY_KEY);
+		let data = manager.get(value);
+
+		profileKey = data && typeof data == "object" ? data.identifier : 0;
+	}
+
+	//
+	let savedData = getDataOld();
+	if(savedData){
+		manager.import([savedData]);
+		localStorage.removeItem(COUNTER_SAVING_KEY);
+	}
 	
 	controller = new CounterController();
-	if(savedData) controller.import(savedData);
+	controller.import(manager.get(profileKey));
 
-	controller.addEventListener("change-label", obj => { setData(obj.target.get()); });
-	controller.addEventListener("change-max", obj => { setData(obj.target.get()); });
-	controller.addEventListener("change-count", obj => { setData(obj.target.get()); });
+	controller.addEventListener("change-label", obj => { saveData(obj.target.get()); });
+	controller.addEventListener("change-max", obj => { saveData(obj.target.get()); });
+	controller.addEventListener("change-count", obj => { saveData(obj.target.get()); });
 
-	window.addEventListener("storage", event => { controller.import(getData()); });
+	manager.addEventListener("import", obj => { controller.import(manager.get(profileKey)); });
 
 	//
 });
 
 //
 
-function getData(){
+function getDataOld(){
 	let data = JSON.parse(localStorage.getItem(COUNTER_SAVING_KEY));
 	return data;
 }
 
-function setData(obj){
-	if(typeof obj == "object" && !(isNaN(obj.max) && isNaN(obj.count))){
-		let data = {
-			label: obj.label,
-			max: obj.max,
-			count: obj.count,
-		};
-
-		localStorage.setItem(COUNTER_SAVING_KEY, JSON.stringify(data));
-	}
+function saveData(obj){
+	if(manager.length == 0) manager.add({});
+	manager.set(profileKey, obj);
 }
+
+//
 
 //
 getFlag = function(){
